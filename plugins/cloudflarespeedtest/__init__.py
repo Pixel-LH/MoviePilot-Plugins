@@ -32,7 +32,7 @@ class CloudflareSpeedTest(_PluginBase):
     # 插件图标
     plugin_icon = "cloudflare.jpg"
     # 插件版本
-    plugin_version = "1.4"
+    plugin_version = "1.5"
     # 插件作者
     plugin_author = "thsrite"
     # 作者主页
@@ -370,7 +370,7 @@ class CloudflareSpeedTest(_PluginBase):
                 if SystemUtils.is_windows():
                     self.__get_windows_cloudflarest(download_url, proxies)
                 else:
-                    os.system(f'wget -P {self._cf_path} https://ghproxy.com/{download_url}')
+                    os.system(f'wget -P {self._cf_path} https://ghfast.top/{download_url}')
 
         # 判断是否下载好安装包
         if Path(f'{self._cf_path}/{cf_file_name}').exists():
